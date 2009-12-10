@@ -29,3 +29,17 @@ end
 task :profile do
  exec("ruby #{File.dirname(__FILE__)}/test/profile/profile.rb")
 end
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "arunthampi-memcached"
+    gemspec.summary = "Chu Yeow's fork of memcached which allows big-set and big-get"
+    gemspec.description = "Chu Yeow's fork of memcached which allows big-set and big-get"
+    gemspec.email = "chuyeow@gmail.com"
+    gemspec.homepage = "http://github.com/chuyeow/memcached"
+    gemspec.authors = ["Chu Yeow"]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: sudo gem install jeweler"
+end
