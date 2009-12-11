@@ -33,7 +33,7 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "memcached"
+    gemspec.name = "arunthampi-memcached"
     gemspec.summary = "Chu Yeow's fork of memcached which allows big-set and big-get"
     gemspec.description = "Chu Yeow's fork of memcached which allows big-set and big-get"
     gemspec.email = "chuyeow@gmail.com"
